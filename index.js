@@ -5,7 +5,7 @@ require('highlightjs/styles/solarized-dark.css');
 
 // set up slides
 const slides = require('./slides/index.pug');
-var div = document.createElement('div');
+const div = document.createElement('div');
 div.innerHTML = slides();
 document.body.appendChild(div.childNodes[0]);
 

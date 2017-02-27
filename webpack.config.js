@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './index.js',
@@ -12,12 +13,15 @@ module.exports = {
       loader: 'pug-loader'
     }, {
       test: /\.css$/,
-      loaders: [ 'style-loader', 'css-loader' ]
+      use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
+        use: "css-loader"
+      })
     }, {
       test: /\.(eot|svg|woff|ttf)$/,
       loader: 'url-loader',
       query: { limit: '10000' }
     }]
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [new HtmlWebpackPlugin(), new ExtractTextPlugin("styles.css")]
 };
