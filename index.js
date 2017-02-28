@@ -1,7 +1,7 @@
 // styles
 require('reveal/index.css');
 require('./styles/index.scss');
-require('highlightjs/styles/solarized-dark.css');
+require('highlightjs/styles/atom-one-light.css');
 
 // set up slides
 const slides = require('./slides/index.pug');

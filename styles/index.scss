@@ -3,9 +3,10 @@
 @import "./vendor/settings";
 // ---------------------------------------------
 
-// Include theme-specific fonts
-// @import url(../../lib/font/league-gothic/league-gothic.css);
-// @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
+$headingFont: 'Oswald', sans-serif;
+$mainFont: 'Roboto', sans-serif;
 
 // colors
 html * {
@@ -14,11 +15,13 @@ html * {
 }
 
 // Override theme settings (see ../template/settings.scss)
-$mainColor: #1B2C6A;
-$headingColor: #F08387;
+
+$mainColor: #16080B;
+$headingColor: #9E2B25;
 $headingTextShadow: none;
-$backgroundColor: #FFFFC4;
-$linkColor: #556AAC;
+$backgroundColor: #F5F8DE;
+$linkColor: #4C2C72;
+//#4D5057
 
 
 // Theme template ------------------------------
