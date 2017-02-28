@@ -1,6 +1,6 @@
 // styles
 require('reveal/index.css');
-require('reveal/theme/solarized.css');
+require('./styles/index.scss');
 require('highlightjs/styles/solarized-dark.css');
 
 // set up slides

@@ -1,0 +1,26 @@
+// Default mixins and settings -----------------
+@import "./vendor/mixins";
+@import "./vendor/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+// @import url(../../lib/font/league-gothic/league-gothic.css);
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// colors
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #1B2C6A;
+$headingColor: #F08387;
+$headingTextShadow: none;
+$backgroundColor: #FFFFC4;
+$linkColor: #556AAC;
+
+
+// Theme template ------------------------------
+@import "./vendor/theme";
+// ---------------------------------------------
